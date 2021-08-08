@@ -33,13 +33,13 @@ function deliveryCost(item){
     }
 
     // calculating 
-    const for_100=100;
-    const for_200=80;
-    const forMoreThan_200=50;
+    const for_100=100; //taka
+    const for_200=80;  //taka
+    const forMoreThan_200=50;   //taka
 
     if(item>200){
-        const till_100 = 100*for_100;
-        const moreThan_100 = 80*for_200;
+        const till_100 = 100*for_100; // for 1-100 item
+        const moreThan_100 = 100*for_200; // for 101-200 item
         const restItem =item-200;
         const restAmount =restItem*forMoreThan_200;
         total = till_100 + moreThan_100 + restAmount;
@@ -58,7 +58,7 @@ function deliveryCost(item){
     }
 }
 
-console.log(deliveryCost(2));
+console.log(deliveryCost(10));
 
 
 function totalSales (shirts,pants,shoes){
