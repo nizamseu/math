@@ -97,3 +97,19 @@ console.log(evenNumber(a));
 
     console.log( removeDuplictaeValue(nam));
     console.log( removeDuplictaeValue(age));
+
+
+    // reverse a string 
+
+    const myString = 'I Love Bangladesh';
+
+    function reverse(text){
+        let newString=''
+        for(const element  of text){
+            newString= element + newString;
+        }
+
+        return newString;
+    }
+
+    console.log(reverse(myString));
