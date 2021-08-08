@@ -94,3 +94,21 @@ function totalSales (shirts,pants,shoes){
 }
 
 console.log(totalSales(2,2,2));
+
+
+function seerToMon (seer){
+    // error handling 
+    if(typeof seer == 'string' || typeof seer == 'undefined' || typeof seer == 'object'){
+        return 'Give me a valid Number'
+    }
+
+    // nagative value cheking 
+    if( seer <0){
+        return 'Give me positive number'
+    }
+
+    const mon =seer/40;
+    // const monWithoutfrac =Math.floor(mon)
+    return  mon
+}
+console.log(seerToMon('60'));
