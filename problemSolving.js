@@ -21,6 +21,17 @@ function perfectFriend(friendsName){
 console.log(perfectFriend(fname));
 
 function deliveryCost(item){
+ // error cheking 
+
+    if(typeof item == 'string' || typeof item == 'undefined' || typeof item == 'object'){
+        return 'NOT Allowed, Only Number allow'
+    }
+
+    if( item <0){
+        return 'Give me positive number'
+    }
+
+
     const for_100=100;
     const for_200=80;
     const forMoreThan_200=50;
