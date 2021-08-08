@@ -58,9 +58,11 @@ function deliveryCost(item){
     }
 }
 
-console.log(deliveryCost(10));
+console.log(deliveryCost(1));
 
 
+
+// total cost problem 
 function totalSales (shirts,pants,shoes){
 
     // error handleing 
@@ -94,7 +96,7 @@ function totalSales (shirts,pants,shoes){
     return totalAmount;
 }
 
-console.log(totalSales(2,2,2));
+console.log(totalSales(0,0,0));
 
 // seer to mon convertion 
 function seerToMon (seer){
