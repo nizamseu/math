@@ -1,5 +1,6 @@
-const fname = ['ulakfd','fhsj','anis','nizam','kamall','aman','jamall','aman','nizamm'];
 
+
+//4. perfect friend problem
 function perfectFriend(friendsName){
     // error cheking 
     if(typeof friendsName == 'string' || typeof friendsName == 'number'){
@@ -18,15 +19,15 @@ function perfectFriend(friendsName){
     }
 }
 
-console.log(perfectFriend(fname));
+
+// 3. delivery cost problem
 
 function deliveryCost(item){
  // error cheking 
-
     if(typeof item == 'string' || typeof item == 'undefined' || typeof item == 'object'){
         return 'Give me a valid Number'
     }
-
+// nagative value checking 
     if( item <0){
         return 'Give me positive number'
     }
@@ -52,12 +53,12 @@ function deliveryCost(item){
         return total;
     }
     else {
-        const total = 100*for_100;
+        const total = item*for_100;
         return total ;
     }
 }
 
-console.log(deliveryCost());
+console.log(deliveryCost(2));
 
 
 function totalSales (shirts,pants,shoes){
@@ -95,7 +96,7 @@ function totalSales (shirts,pants,shoes){
 
 console.log(totalSales(2,2,2));
 
-
+// seer to mon convertion 
 function seerToMon (seer){
     // error handling 
     if(typeof seer == 'string' || typeof seer == 'undefined' || typeof seer == 'object'){
@@ -111,4 +112,4 @@ function seerToMon (seer){
     // const monWithoutfrac =Math.floor(mon)
     return  mon
 }
-console.log(seerToMon('60'));
+console.log(seerToMon(60));
